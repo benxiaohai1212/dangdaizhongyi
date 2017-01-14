@@ -1,67 +1,108 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="second">
+<html lang="zh-CN" class="second three">
 <head>
 	<meta charset="UTF-8">
-	<title>二级页面</title>
+	<title>三级页面</title>
 	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="css/wrap.css">
 
+	<style type="text/css">
+		.three .dropdown-menu {
+		    right: 0;
+		    left: -50px;
+		    border:0;
+		}
+		.three .header .containers {
+			padding-bottom: 20px;
+			border-bottom: 1px solid #ddd;
+		}
+		.three .daohang {
+			vertical-align: bottom;
+		    padding-top: 35px;
+		    padding-left: 20px;
+		    color: #A11216;
+		}
+		.three .daohang a {
+			color: #A11216;
+			text-decoration: none;
+		}
+.three .panel .panel-heading h3 {
+	margin-bottom: 20px;
+}
+.three .panel .panel-heading p {
+	margin: 2px 0;
+	color: #666;
+}
+.three .neigao {
+	padding-top:88px;
+}
+.three .media-object {
+	width: 85%;
+}
+.three .panel-default > .panel-body > p {
+	text-indent: 2em;
+}
+
+
+
+
+
+	</style>
 </head>
 <body>
 	<div class="bs-header">
 		<div class="container containers">
 			<div class="col-md-s">
 				<p><a href="">新闻快报</a></p>
-				<p><a href="">指南路径</a></p>
 			</div>
 			<div class="col-md-s">
 				<p><a href="">名家对话</a></p>
-				<p><a href="">岐黄讲座</a></p>
 			</div>
 			<div class="col-md-s">
 				<p><a href="">科研成就</a></p>
-				<p><a href="">案例分享</a></p>
 			</div>
 			<div class="col-md-s">
 				<p><a href="">会议专题</a></p>
-				<p><a href="">名医名著</a></p>
 			</div>
 			<div class="col-md-s">
 				<p><a href="">大医名医</a></p>
-				<p><a href="">网话健康</a></p>
 			</div>
 			<div class="col-md-s">
 				<p><a href="">一带一路</a></p>
-				<p><a href="">名族医学</a></p>
 			</div>
 			<div class="col-md-s">
 				<p><a href="">百家争鸣</a></p>
-				<p><a href="">道地药材</a></p>
 			</div>
 			<div class="col-md-s">
 				<p><a href="">大学之窗</a></p>
-				<p><a href="">培训专题</a></p>
 			</div>
 			<div class="col-md-s">
 				<p><a href="">期刊盘点</a></p>
-				<p><a href="">政策速递</a></p>
 			</div>
 			<div class="col-md-s">
 				<p><a href="">指南路径</a></p>
-				<p><a href="">老字号</a></p>
 			</div>
-			<div class="col-md-s" style="border-right:0">
-				<p><a href="">游学中国</a></p>
-				<p><a href="">网上论坛</a></p>
+			<div class="col-md-s" style="position: relative;">
+				<p class="dropdown-toggle" data-toggle="dropdown"><a href="javascript:void(0)">更多 <i class="fa fa-caret-down"></i></a></p>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
 			</div>
 			<div class="clearfix"></div>
 		</div>
 	</div>
 	<div class="header">
 		<div class="container containers">
-			<div class="navbar-header"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+			<div class="navbar-header">
+				<a href="index.html"><img src="images/logo.png" alt=""></a>
+			</div>
+			<div class="pull-left daohang"><span><a href="index.html">首页</a> / <a href="">新闻快报</a> / 正文</span></div>
 			<div class="search-bar">
 				<select class="selectpicker form-control">
 					<option>新闻</option>
@@ -75,59 +116,35 @@
 	   </div>
 		<div class="clearfix"></div>
 	</div>
-	<div class="nav-header">
-		<div class="container containers">
-			<ul>
-				<li class="selected"><a href="">新闻快报</a></li>
-				<li><a href="">名家对话</a></li>
-				<li><a href="">案例分享</a></li>
-				<li><a href="">会议专题</a></li>
-				<li><a href="">大医名医</a></li>
-				<li><a href="">一带一路</a></li>
-			</ul>
-				<div class="clearfix"></div>
-		</div>
-	</div>
+	
 	<div class="nav-banner">
 		<div class="container banner">
 			<div class="row">
 				<div class="col-md-8">
-					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-						<!-- Indicators -->
-						<ol class="carousel-indicators">
-							<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-							<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-							<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-						</ol>
+					<div class="panel panel-default xinwen">
+						<div class="panel-heading">
+					        <h3>宁夏互联网医院正式启动 打造医疗管理服务平台新模式</h3>
+					        <p>2016-12-09 10:12</p>
+					        <p>作者：秩名 来源:当代中医</p>
+					    </div>
+					    <div class="panel-body">
+					    	<p>得益于新医改稳步推进的带动作用，医药制造业工业增加值总体保持平稳增长趋势。2012年上半年，在国内经济持续下行的背景下，医药制造业工业增加值增速逐步下行。进入3季度以来，在“毒胶囊”效应趋缓和政府相继出台《“十二五”期间卫生扶贫工作指导意见》、《关于开展城乡居民大病保险工作的指导意见》等一系列利好政策的带动下，医药行业市场景气开始回升，医药制造业产销增速扭转了上半年以来持续下滑趋势，工业增加值增速明显趋稳、产品销售收入增速开始回升。其中，前三季度，医药制造业工业增加值增速为14.6%，比上半年回升0.3个百分点；医药制造业实现产品销售收入12069.91亿元，同比增长19.52%，比上半年提高0.45个百分点。</p>
+					    	<p>前三季度，我国累计医药品出口额89.58亿美元，同比仅增长1.8%，增速比上年同期下降8.4个百分点，比上半年下降1.5百分点。值得注意的是，尽管医药品单月进口额震荡下滑，但医药品进口额整体仍保持较高水平。前三季度，我国医药品累计进口额102.31亿美元，同比增长23%，增速比上年同期下滑18.7个百分点，比上半年下降6.9个百分点。其中，单月进口额从7月的12.01亿美元震荡下行至9月的11.23亿美元。</p>
+							<p>展望2013年，一方面，药品招标逐步趋于良性。“基药招标”的“超低价中标”模式逐步改善，政府通过“基本药物试行国家统一定价”可以有效地防止或规避低价恶性竞争和各省的比价效应，有利于提高药企的盈利能力。同时，即将出台的新版基药目录的扩容将带动基层市场的持续增长，主要是由于基本药物报销比例明显高于非基本药物，基药品种的增加无疑将会加大政府医药卫生投入比例。因此，预计2013年医药制造业利润增速将继续回升。</p>
+							<p>从长远来看，国家工信部发布的《医药工业“十二五”发展规划》明确提出发展目标为形成5个以上年销售收入达到500亿元企业，100个100亿元企业，前100位企业销售收入占行业50%的目标。在上述政策鼓励及行业竞争背景下，未来行业集中度将进一步提高，凸显企业规模的重要性，企业核心竞争力的打造将决定企业未来的发展。</p>
+							<p>2012年，三年新医改结束，医药行业进入后医改时代。回首三年新医改，政府不断加大对医疗领域的投入，中国医药市场整体扩容，中国医药产业经历前所未有的发展机遇。</p>
+							<p>医药产业是国民经济的重要组成部分，与人民群众的生命健康和生活质量等切身利益密切相关，是全社会关注的热点，同时也是构建社会主义和谐社会的重要内容。改革开放以来，中国医药行业一直保持较快的增长速度，1978-2011年，医药工业规模年均递增均处于15%以上，规模不断扩大，经济运行质量与效益不断提高。</p>
+							<div class="author">(作者马青连，为安徽省中国特色社会主义理论体系研究中心特聘研究员、安徽医科大学副教授)</div>
 
-						<!-- Wrapper for slides -->
-						<div class="carousel-inner" role="listbox">
-							<div class="item active">
-								<img src="images/banner01.jpg" alt="...">
-								<div class="carousel-caption">
-									<span>诺贝尔奖再次颁给植物药</span>
-								</div>
-							</div>
-							<div class="item">
-								<img src="images/banner02.jpg" alt="...">
-								<div class="carousel-caption">
-									<span>诺贝尔奖再次颁给植物药</span>
-								</div>
-							</div>
-						</div>
 
-						<!-- Controls -->
-						<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-							<span class="glyphicon glyphicon-chevron-left"></span>
-							<span class="sr-only">Previous</span>
-						</a>
-						<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-							<span class="glyphicon glyphicon-chevron-right"></span>
-							<span class="sr-only">Next</span>
-						</a>
+
+
+
+
+					    </div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 neigao">
 					<div class="panel panel-default">
 					    <div class="panel-heading">
 					        <span>热度排行</span>
@@ -140,85 +157,22 @@
 					        <div class="item-list"><i>5</i><span><a href="">屠呦呦团队获得诺贝尔奖医药发展</a></span></div>
 					        <div class="item-list"><i>6</i><span><a href="">中医药法颁布医药发展</a></span></div>
 					    </div>
+					    <div class="panel-body">
+					    	<img class="media-object" src="images/zhengnengliang.png">
+					    	<img class="media-object" src="images/zhengnengliang.png">
+					    	<img class="media-object" src="images/zhengnengliang.png">
+					    	<img class="media-object" src="images/zhengnengliang.png">
+					    </div>
 					</div>
 				</div>
 			</div>	
 		</div>
 	</div>
-	<div class="nav-banner2">
+	<!-- <div class="nav-banner2">
 		<div class="container banner">
 			<div class="row">
 				<div class="col-md-8">
-					<div class="panel panel-default xinwen">
-					    <div class="panel-heading">
-					        <span>首页/新闻快报</span>
-					    </div>
-					    <div class="panel-body">
-					        <div class="media">
-							  	<div class="media-left">
-								    <a href="javascript:void(0)">
-								      	<img class="media-object" src="images/xinwen.jpg">
-								    </a>
-							  	</div>
-								<div class="media-body">
-									<div class="title">卫计委细化基层医改 建多渠道财政补渠道财政外渠道</div>
-									<div class="content">10月16日，国家卫计委办公厅传来消息，根据10月16日，国家卫计委办公厅传来消息，根据10月16日，国近日北京市西城去，内蒙古赤峰</div>
-								</div>
-							</div>
-					    </div>
-					    <div class="panel-body">
-					        <div class="media">
-							  	<div class="media-left">
-								    <a href="javascript:void(0)">
-								      	<img class="media-object" src="images/xinwen.jpg">
-								    </a>
-							  	</div>
-								<div class="media-body">
-									<div class="title">卫计委细化基层医改 建多渠道财政补渠道财政外渠道</div>
-									<div class="content">10月16日，国家卫计委办公厅传来消息，根据10月16日，国家卫计委办公厅传来消息，根据10月16日，国近日北京市西城去，内蒙古赤峰</div>
-								</div>
-							</div>
-					    </div>
-					    <div class="panel-body">
-					        <div class="media">
-							  	<div class="media-left">
-								    <a href="javascript:void(0)">
-								      	<img class="media-object" src="images/xinwen.jpg">
-								    </a>
-							  	</div>
-								<div class="media-body">
-									<div class="title">卫计委细化基层医改 建多渠道财政补渠道财政外渠道</div>
-									<div class="content">10月16日，国家卫计委办公厅传来消息，根据10月16日，国家卫计委办公厅传来消息，根据10月16日，国近日北京市西城去，内蒙古赤峰</div>
-								</div>
-							</div>
-					    </div>
-					    <div class="panel-body">
-					        <div class="media">
-							  	<div class="media-left">
-								    <a href="javascript:void(0)">
-								      	<img class="media-object" src="images/xinwen.jpg">
-								    </a>
-							  	</div>
-								<div class="media-body">
-									<div class="title">卫计委细化基层医改 建多渠道财政补渠道财政外渠道</div>
-									<div class="content">10月16日，国家卫计委办公厅传来消息，根据10月16日，国家卫计委办公厅传来消息，根据10月16日，国近日北京市西城去，内蒙古赤峰</div>
-								</div>
-							</div>
-					    </div>
-					    <div class="panel-body">
-					        <div class="media">
-							  	<div class="media-left">
-								    <a href="javascript:void(0)">
-								      	<img class="media-object" src="images/xinwen.jpg">
-								    </a>
-							  	</div>
-								<div class="media-body">
-									<div class="title">卫计委细化基层医改 建多渠道财政补渠道财政外渠道</div>
-									<div class="content">10月16日，国家卫计委办公厅传来消息，根据10月16日，国家卫计委办公厅传来消息，根据10月16日，国近日北京市西城去，内蒙古赤峰</div>
-								</div>
-							</div>
-					    </div>
-					</div>
+					
 					<div>
 						<img src="images/guanggao.jpg">						
 					</div>
@@ -717,7 +671,7 @@
 				</div>
 			</div>	
 		</div>
-	</div>
+	</div> -->
 	
 	<div class="footer">
 		<div class="container containers">

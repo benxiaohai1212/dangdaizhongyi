@@ -453,6 +453,9 @@ button {
     background-color: #9D070C;
     color: #FFF;
 }
+.three .footer .aboutUs .btn {
+    background-color: #3A4D6B;
+}
 .footer .aboutUs .pull-right ul {
     
 }
@@ -462,4 +465,110 @@ button {
 .footer .aboutUs .info {
     margin-top: 5px;
     margin-left: 20px;
+}
+
+/***************************************************************************************************/
+.second .nav-header ul {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1; /* Fix for IE7 */
+    *display: inline; /* Fix for IE7 */
+    list-style:none;
+}
+.second .nav-header li {
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1; /* Fix for IE7 */
+    *display: inline; /* Fix for IE7 */
+    float: left;
+    border-width: 1px;
+    border-left-color: #222;
+    border-left-style: solid;
+    text-align: center;
+}
+.second .nav-header ul li:last-child {
+    border-right-color: #222;
+    border-right-style: solid;
+}
+.second .nav-header li:hover {
+    background-color: blue;
+}
+.second .nav-header li.selected {
+    background-color: blue;
+}
+.second .nav-header li a {
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+}
+.second .panel-default {
+    border-color: transparent;
+}
+.second .panel-default > .panel-heading,.second .panel-default > .panel-body {
+    background-color: transparent;
+    padding-left: 0;
+}
+.second .panel-default > .panel-heading span {
+    border-bottom: 3px solid red;
+    padding-bottom: 4px;
+    padding-right: 20px;
+    font-size: 16px;
+}
+.second .panel-default > .panel-body > div.item-list {
+    word-wrap: break-word;
+    font-size: 14px;
+    width: 350px;
+    display:block;
+    white-space:nowrap; 
+    overflow:hidden; 
+    text-overflow:ellipsis;
+    line-height: 2;
+}
+.second .panel-default > .panel-body > div.item-list > i {
+    background-color: red;
+    vertical-align: middle;
+    font-style: normal;
+    text-align: center;
+    color: #FFF;
+    padding: 0px 4px;
+    margin-right: 5px;
+}
+.second .panel-default > .panel-body > div.item-list > span a {
+    color: #333;
+    text-decoration: none;
+}
+.second .panel-group .panel-heading + .panel-collapse > .panel-body {
+    border:0;
+}
+.second .panel-default > .panel-heading .panel-title {
+    word-wrap: break-word;
+    font-size: 14px;
+    width: 350px;
+    display:block;
+    white-space:nowrap; 
+    overflow:hidden; 
+    text-overflow:ellipsis;
+    line-height: 1.5;
+}
+.second .panel .panel-collapse .media-object {
+    width: auto;
+    height: 50px;
+}
+.second .panel-default > .panel-heading {
+    padding: 2px 15px;
+}
+.second .panel.xinwen .panel-body .media .media-object {
+    height: 75px;
+    width: auto;
+}
+.second .panel .panel-body .media .media-body .title {
+    font-size: 16px;
+    padding: 5px 0;
+    color: #394D67;
+}
+.second .panel .panel-body .media .media-body .content {
+    font-size: 12px;
+    color:#999;
 }
