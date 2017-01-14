@@ -3,12 +3,116 @@
 <head>
 	<meta charset="UTF-8">
 	<title>二级页面</title>
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="css/wrap.css">
 
 	<style type="text/css">
-
+		.second .nav-header ul {
+			padding: 0;
+			margin: 0;
+			display: inline-block;
+			vertical-align: top;
+			zoom: 1; /* Fix for IE7 */
+			*display: inline; /* Fix for IE7 */
+			list-style:none;
+		}
+		.second .nav-header li {
+			display: inline-block;
+			vertical-align: top;
+			zoom: 1; /* Fix for IE7 */
+			*display: inline; /* Fix for IE7 */
+			float: left;
+    		border-width: 1px;
+    		border-left-color: #222;
+    		border-left-style: solid;
+    		text-align: center;
+		}
+		.second .nav-header ul li:last-child {
+			border-right-color: #222;
+    		border-right-style: solid;
+		}
+		.second .nav-header li:hover {
+			background-color: blue;
+		}
+		.second .nav-header li.selected {
+			background-color: blue;
+		}
+		.second .nav-header li a {
+			padding: 10px 15px;
+			display: block;
+			text-decoration: none;
+		}
+		.second .panel-default {
+			border-color: transparent;
+		}
+		.second .panel-default > .panel-heading,.second .panel-default > .panel-body {
+			background-color: transparent;
+			padding-left: 0;
+		}
+		.second .panel-default > .panel-heading span {
+			border-bottom: 3px solid red;
+			padding-bottom: 4px;
+    		padding-right: 20px;
+    		font-size: 16px;
+		}
+		.second .panel-default > .panel-body > p {
+			word-wrap: break-word;
+		    font-size: 14px;
+		    width: 350px;
+		    display:block;
+		    white-space:nowrap; 
+		    overflow:hidden; 
+		    text-overflow:ellipsis;
+		    line-height: 1.5;
+		}
+		.second .panel-default > .panel-body > p > i {
+			background-color: red;
+		    vertical-align: middle;
+		    font-style: normal;
+		    text-align: center;
+		    color: #FFF;
+		    padding: 0px 4px;
+		    margin-right: 5px;
+		}
+		.second .panel-default > .panel-body > p > span a {
+			color: #333;
+			text-decoration: none;
+		}
+		.second .panel-group .panel-heading + .panel-collapse > .panel-body {
+			border:0;
+		}
+		.second .panel-default > .panel-heading .panel-title {
+			word-wrap: break-word;
+		    font-size: 14px;
+		    width: 350px;
+		    display:block;
+		    white-space:nowrap; 
+		    overflow:hidden; 
+		    text-overflow:ellipsis;
+		    line-height: 1.5;
+		}
+		.second .panel .panel-collapse .media-object {
+			width: auto;
+			height: 50px;
+		}
+		.second .panel-default > .panel-heading {
+			padding: 2px 15px;
+		}
+		.second .panel.xinwen .panel-body .media .media-object {
+			height: 75px;
+			width: auto;
+		}
+		.second .panel .panel-body .media .media-body .title {
+			font-size: 16px;
+			padding: 5px 0;
+			color: #394D67;
+		}
+		.second .panel .panel-body .media .media-body .content {
+			font-size: 12px;
+			color:#999;
+		}
 	</style>
 </head>
 <body>
@@ -79,25 +183,15 @@
 	</div>
 	<div class="nav-header">
 		<div class="container containers">
-			<div class="col-md-s">
-				<p><a href="">新闻快报</a></p>
-			</div>
-			<div class="col-md-s">
-				<p><a href="">名家对话</a></p>
-			</div>
-			<div class="col-md-s">
-				<p><a href="">案例分享</a></p>
-			</div>
-			<div class="col-md-s">
-				<p><a href="">会议专题</a></p>
-			</div>
-			<div class="col-md-s">
-				<p><a href="">大医名医</a></p>
-			</div>
-			<div class="col-md-s">
-				<p><a href="">一带一路</a></p>
-			</div>
-			<div class="clearfix"></div>
+			<ul>
+				<li class="selected"><a href="">新闻快报</a></li>
+				<li><a href="">名家对话</a></li>
+				<li><a href="">案例分享</a></li>
+				<li><a href="">会议专题</a></li>
+				<li><a href="">大医名医</a></li>
+				<li><a href="">一带一路</a></li>
+			</ul>
+				<div class="clearfix"></div>
 		</div>
 	</div>
 	<div class="nav-banner">
@@ -139,765 +233,598 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-md-4"></div>
+				<div class="col-md-4">
+					<div class="panel panel-default">
+					    <div class="panel-heading">
+					        <span>热度排行</span>
+					    </div>
+					    <div class="panel-body">
+					        <p><i>1</i><span><a href="">习近平对中医药发展做出指标医药发展</a></span></p>
+					        <p><i>2</i><span><a href="">北京中医药大学开设国外分校医药发展</a></span></p>
+					        <p><i>3</i><span><a href="">一带一路联盟成立医药发展医药发展</a></span></p>
+					        <p><i>4</i><span><a href="">中医药科研获得重大突破医药发展</a></span></p>
+					        <p><i>5</i><span><a href="">屠呦呦团队获得诺贝尔奖医药发展</a></span></p>
+					        <p><i>6</i><span><a href="">中医药法颁布医药发展</a></span></p>
+					    </div>
+					</div>
+				</div>
 			</div>	
 		</div>
 	</div>
-	<div class="customer">
-		<div class="container containers">
-			<div class="panels">
-				<div class="panel-header">
-					<img src="images/1-1.png">
-				</div>
-				<div class="panel-bodys">
-					<div class="panel-group" id="accordion">
-					    <div class="panel panel-default">
-					        <div class="panel-heading">
-					            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-					         		<i class="fa fa-caret-right"></i> 国务院：贫困地区儿童将增大病医保 阿斯顿发生的股份化工热帖维护云煽风点火案违法人给他是我热还以为而已
-					        	</div>
-					        </div>
-					        <div id="collapse1" class="panel-collapse collapse in">
-					            <div class="panel-body">
-					            	<div class="media">
-									  	<div class="media-left">
-										    <a href="javascript:void(0)">
-										      	<img class="media-object" src="images/xinwen.jpg">
-										    </a>
-									  	</div>
-										<div class="media-body">
-											国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
-										</div>
-									</div>
-					            </div>
-					        </div>
+	<div class="nav-banner2">
+		<div class="container banner">
+			<div class="row">
+				<div class="col-md-8">
+					<div class="panel panel-default xinwen">
+					    <div class="panel-heading">
+					        <span>首页/新闻快报</span>
 					    </div>
-					    <div class="panel panel-default">
-					        <div class="panel-heading">
-					            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-								<i class="fa fa-caret-right"></i> 
-								重庆医改后导致医疗费任性上涨
+					    <div class="panel-body">
+					        <div class="media">
+							  	<div class="media-left">
+								    <a href="javascript:void(0)">
+								      	<img class="media-object" src="images/xinwen.jpg">
+								    </a>
+							  	</div>
+								<div class="media-body">
+									<div class="title">卫计委细化基层医改 建多渠道财政补渠道财政外渠道</div>
+									<div class="content">10月16日，国家卫计委办公厅传来消息，根据10月16日，国家卫计委办公厅传来消息，根据10月16日，国近日北京市西城去，内蒙古赤峰</div>
 								</div>
-					        </div>
-					        <div id="collapse2" class="panel-collapse collapse">
-					            <div class="panel-body">
-					                <div class="media">
-									  	<div class="media-left">
-										    <a href="javascript:void(0)">
-										      	<img class="media-object" src="images/xinwen.jpg">
-										    </a>
-									  	</div>
-										<div class="media-body">
-											国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
-										</div>
-									</div>
-					            </div>
-					        </div>
-					    </div>
-					    <div class="panel panel-default">
-					        <div class="panel-heading">
-					            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-								<i class="fa fa-caret-right"></i> 
-								广东11月起生二孩无需审批，登记
-								</div>
-					        </div>
-					        <div id="collapse3" class="panel-collapse collapse">
-					            <div class="panel-body">
-					                <div class="media">
-									  	<div class="media-left">
-										    <a href="javascript:void(0)">
-										      	<img class="media-object" src="images/xinwen.jpg">
-										    </a>
-									  	</div>
-										<div class="media-body">
-											国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
-										</div>
-									</div>
-					            </div>
-					        </div>
-					    </div>
-					    <div class="panel panel-default">
-					        <div class="panel-heading">
-					            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse4">
-								<i class="fa fa-caret-right"></i> 
-								卫计委细化基层医改 
-								</div>
-					        </div>
-					        <div id="collapse4" class="panel-collapse collapse">
-					            <div class="panel-body">
-					                <div class="media">
-									  	<div class="media-left">
-										    <a href="javascript:void(0)">
-										      	<img class="media-object" src="images/xinwen.jpg">
-										    </a>
-									  	</div>
-										<div class="media-body">
-											国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
-										</div>
-									</div>
-					            </div>
-					        </div>
-					    </div>
-					    <div class="panel panel-default">
-					        <div class="panel-heading">
-					            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse5">
-								<i class="fa fa-caret-right"></i> 
-								国务院：贫困地区儿童将增大病医保
-								</div>
-					        </div>
-					        <div id="collapse5" class="panel-collapse collapse">
-					            <div class="panel-body">
-					                <div class="media">
-									  	<div class="media-left">
-										    <a href="javascript:void(0)">
-										      	<img class="media-object" src="images/xinwen.jpg">
-										    </a>
-									  	</div>
-										<div class="media-body">
-											国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
-										</div>
-									</div>
-					            </div>
-					        </div>
-					    </div>
-					    <div class="panel panel-default">
-					        <div class="panel-heading">
-					            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse6">
-								<i class="fa fa-caret-right"></i> 
-								卫计委细化基层医改 建多渠道财政补
-								</div>
-					        </div>
-					        <div id="collapse6" class="panel-collapse collapse">
-					            <div class="panel-body">
-					                <div class="media">
-									  	<div class="media-left">
-										    <a href="javascript:void(0)">
-										      	<img class="media-object" src="images/xinwen.jpg">
-										    </a>
-									  	</div>
-										<div class="media-body">
-											国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
-										</div>
-									</div>
-					            </div>
-					        </div>
-					    </div>
-					</div>
-				</div>
-			</div>
-			<div class="panels">
-				<div class="panel-header"><img src="images/1-2.png"></div>
-				<div class="panel-bodys">
-					<div class="panel-group" id="2accordion">
-					    <div class="panel panel-default">
-					        <div class="panel-heading">
-					            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#2accordion" href="#2collapse1">
-					         		<i class="fa fa-caret-right"></i> 国务院：贫困地区儿童将增大病医保 
-					        	</div>
-					        </div>
-					        <div id="2collapse1" class="panel-collapse collapse in">
-					            <div class="panel-body">
-					            	<div class="media">
-									  	<div class="media-left">
-										    <a href="javascript:void(0)">
-										      	<img class="media-object" src="images/xinwen.jpg">
-										    </a>
-									  	</div>
-										<div class="media-body">
-											国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
-										</div>
-									</div>
-					            </div>
-					        </div>
-					    </div>
-					    <div class="panel panel-default">
-					        <div class="panel-heading">
-					            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#2accordion" href="#2collapse2">
-									<i class="fa fa-caret-right"></i> 
-									重庆医改后导致医疗费任性上涨
-								</div>
-					        </div>
-					        <div id="2collapse2" class="panel-collapse collapse">
-					            <div class="panel-body">
-					                <div class="media">
-									  	<div class="media-left">
-										    <a href="javascript:void(0)">
-										      	<img class="media-object" src="images/xinwen.jpg">
-										    </a>
-									  	</div>
-										<div class="media-body">
-											国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
-										</div>
-									</div>
-					            </div>
-					        </div>
-					    </div>
-					    <div class="panel panel-default">
-					        <div class="panel-heading">
-					            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#2accordion" href="#2collapse3">
-									<i class="fa fa-caret-right"></i> 
-									广东11月起生二孩无需审批，登记
-								</div>
-					        </div>
-					        <div id="2collapse3" class="panel-collapse collapse">
-					            <div class="panel-body">
-					                <div class="media">
-									  	<div class="media-left">
-										    <a href="javascript:void(0)">
-										      	<img class="media-object" src="images/xinwen.jpg">
-										    </a>
-									  	</div>
-										<div class="media-body">
-											国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
-										</div>
-									</div>
-					            </div>
-					        </div>
-					    </div>
-					    <div class="panel panel-default">
-					        <div class="panel-heading">
-					            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#2accordion" href="#2collapse4">
-									<i class="fa fa-caret-right"></i> 
-									卫计委细化基层医改 
-								</div>
-					        </div>
-					        <div id="2collapse4" class="panel-collapse collapse">
-					            <div class="panel-body">
-					                <div class="media">
-									  	<div class="media-left">
-										    <a href="javascript:void(0)">
-										      	<img class="media-object" src="images/xinwen.jpg">
-										    </a>
-									  	</div>
-										<div class="media-body">
-											国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
-										</div>
-									</div>
-					            </div>
-					        </div>
-					    </div>
-					    <div class="panel panel-default">
-					        <div class="panel-heading">
-					            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#2accordion" href="#2collapse5">
-									<i class="fa fa-caret-right"></i> 
-									国务院：贫困地区儿童将增大病医保
-								</div>
-					        </div>
-					        <div id="2collapse5" class="panel-collapse collapse">
-					            <div class="panel-body">
-					                <div class="media">
-									  	<div class="media-left">
-										    <a href="javascript:void(0)">
-										      	<img class="media-object" src="images/xinwen.jpg">
-										    </a>
-									  	</div>
-										<div class="media-body">
-											国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
-										</div>
-									</div>
-					            </div>
-					        </div>
-					    </div>
-					    <div class="panel panel-default">
-					        <div class="panel-heading">
-					            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#2accordion" href="#2collapse6">
-								<i class="fa fa-caret-right"></i> 
-								卫计委细化基层医改 建多渠道财政补
-								</div>
-					        </div>
-					        <div id="2collapse6" class="panel-collapse collapse">
-					            <div class="panel-body">
-					                <div class="media">
-									  	<div class="media-left">
-										    <a href="javascript:void(0)">
-										      	<img class="media-object" src="images/xinwen.jpg">
-										    </a>
-									  	</div>
-										<div class="media-body">
-											国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
-										</div>
-									</div>
-					            </div>
-					        </div>
-					    </div>
-					</div>
-				</div>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-	</div>
-
-	<div class="mayun">
-		<div class="container containers">
-			<div class="panels">
-				<div class="panel-header">
-					<img src="images/dayimingyi.png">
-				</div>
-				<div class="panel-bodys">
-					<div class="media">
-					  	<div class="media-left">
-						    <a href="javascript:void(0)">
-						      	<img class="media-object" src="images/mayun.png">
-						    </a>
-					  	</div>
-						<div class="media-body">
-							<div><img src="images/wangjiemingyi.png" alt=""></div>
-							<div>
-								<div class="panel-headings">
-						            <div class="panel-title">
-						         		<i class="fa fa-caret-right"></i> 黄金旭，医学博士
-						        	</div>
-						        	<div class="panel-body">
-						        		在网上搜索“艾灸”一词，你会发现：除了强身健体，艾灸这个词跟“美容”关联性很高。这“艾灸”在美容院很流行，一个疗程，需要几...<font color="#C0EB4D">[详请]</font>
-						        	</div>
-						        </div>
-								<div class="panel-headings">
-						            <div class="panel-title">
-						         		<i class="fa fa-caret-right"></i> 黄金旭，医学博士
-						        	</div>
-						        	<div class="panel-body">
-						        		在网上搜索“艾灸”一词，你会发现：除了强身健体，艾灸这个词跟“美容”关联性很高。这“艾灸”在美容院很流行，一个疗程，需要几...<font color="#C0EB4D">[详请]</font>
-						        	</div>
-						        </div>
-								<div class="panel-headings">
-						            <div class="panel-title">
-						         		<i class="fa fa-caret-right"></i> 黄金旭，医学博士
-						        	</div>
-						        	<div class="panel-body">
-						        		在网上搜索“艾灸”一词，你会发现：除了强身健体，艾灸这个词跟“美容”关联性很高。这“艾灸”在美容院很流行，一个疗程，需要几...<font color="#C0EB4D">[详请]</font>
-						        	</div>
-						        </div>
 							</div>
-						</div>
+					    </div>
+					    <div class="panel-body">
+					        <div class="media">
+							  	<div class="media-left">
+								    <a href="javascript:void(0)">
+								      	<img class="media-object" src="images/xinwen.jpg">
+								    </a>
+							  	</div>
+								<div class="media-body">
+									<div class="title">卫计委细化基层医改 建多渠道财政补渠道财政外渠道</div>
+									<div class="content">10月16日，国家卫计委办公厅传来消息，根据10月16日，国家卫计委办公厅传来消息，根据10月16日，国近日北京市西城去，内蒙古赤峰</div>
+								</div>
+							</div>
+					    </div>
+					    <div class="panel-body">
+					        <div class="media">
+							  	<div class="media-left">
+								    <a href="javascript:void(0)">
+								      	<img class="media-object" src="images/xinwen.jpg">
+								    </a>
+							  	</div>
+								<div class="media-body">
+									<div class="title">卫计委细化基层医改 建多渠道财政补渠道财政外渠道</div>
+									<div class="content">10月16日，国家卫计委办公厅传来消息，根据10月16日，国家卫计委办公厅传来消息，根据10月16日，国近日北京市西城去，内蒙古赤峰</div>
+								</div>
+							</div>
+					    </div>
+					    <div class="panel-body">
+					        <div class="media">
+							  	<div class="media-left">
+								    <a href="javascript:void(0)">
+								      	<img class="media-object" src="images/xinwen.jpg">
+								    </a>
+							  	</div>
+								<div class="media-body">
+									<div class="title">卫计委细化基层医改 建多渠道财政补渠道财政外渠道</div>
+									<div class="content">10月16日，国家卫计委办公厅传来消息，根据10月16日，国家卫计委办公厅传来消息，根据10月16日，国近日北京市西城去，内蒙古赤峰</div>
+								</div>
+							</div>
+					    </div>
+					    <div class="panel-body">
+					        <div class="media">
+							  	<div class="media-left">
+								    <a href="javascript:void(0)">
+								      	<img class="media-object" src="images/xinwen.jpg">
+								    </a>
+							  	</div>
+								<div class="media-body">
+									<div class="title">卫计委细化基层医改 建多渠道财政补渠道财政外渠道</div>
+									<div class="content">10月16日，国家卫计委办公厅传来消息，根据10月16日，国家卫计委办公厅传来消息，根据10月16日，国近日北京市西城去，内蒙古赤峰</div>
+								</div>
+							</div>
+					    </div>
+					</div>
+					<div>
+						<img src="images/guanggao.jpg">						
+					</div>
+					<div class="panel panel-default xinwen">
+					    <div class="panel-heading">
+					        <span>首页/新闻快报</span>
+					    </div>
+					    <div class="panel-body">
+					        <div class="media">
+							  	<div class="media-left">
+								    <a href="javascript:void(0)">
+								      	<img class="media-object" src="images/xinwen.jpg">
+								    </a>
+							  	</div>
+								<div class="media-body">
+									<div class="title">卫计委细化基层医改 建多渠道财政补渠道财政外渠道</div>
+									<div class="content">10月16日，国家卫计委办公厅传来消息，根据10月16日，国家卫计委办公厅传来消息，根据10月16日，国近日北京市西城去，内蒙古赤峰</div>
+								</div>
+							</div>
+					    </div>
+					    <div class="panel-body">
+					        <div class="media">
+							  	<div class="media-left">
+								    <a href="javascript:void(0)">
+								      	<img class="media-object" src="images/xinwen.jpg">
+								    </a>
+							  	</div>
+								<div class="media-body">
+									<div class="title">卫计委细化基层医改 建多渠道财政补渠道财政外渠道</div>
+									<div class="content">10月16日，国家卫计委办公厅传来消息，根据10月16日，国家卫计委办公厅传来消息，根据10月16日，国近日北京市西城去，内蒙古赤峰</div>
+								</div>
+							</div>
+					    </div>
+					    <div class="panel-body">
+					        <div class="media">
+							  	<div class="media-left">
+								    <a href="javascript:void(0)">
+								      	<img class="media-object" src="images/xinwen.jpg">
+								    </a>
+							  	</div>
+								<div class="media-body">
+									<div class="title">卫计委细化基层医改 建多渠道财政补渠道财政外渠道</div>
+									<div class="content">10月16日，国家卫计委办公厅传来消息，根据10月16日，国家卫计委办公厅传来消息，根据10月16日，国近日北京市西城去，内蒙古赤峰</div>
+								</div>
+							</div>
+					    </div>
+					    <div class="panel-body">
+					        <div class="media">
+							  	<div class="media-left">
+								    <a href="javascript:void(0)">
+								      	<img class="media-object" src="images/xinwen.jpg">
+								    </a>
+							  	</div>
+								<div class="media-body">
+									<div class="title">卫计委细化基层医改 建多渠道财政补渠道财政外渠道</div>
+									<div class="content">10月16日，国家卫计委办公厅传来消息，根据10月16日，国家卫计委办公厅传来消息，根据10月16日，国近日北京市西城去，内蒙古赤峰</div>
+								</div>
+							</div>
+					    </div>
+					    <div class="panel-body">
+					        <div class="media">
+							  	<div class="media-left">
+								    <a href="javascript:void(0)">
+								      	<img class="media-object" src="images/xinwen.jpg">
+								    </a>
+							  	</div>
+								<div class="media-body">
+									<div class="title">卫计委细化基层医改 建多渠道财政补渠道财政外渠道</div>
+									<div class="content">10月16日，国家卫计委办公厅传来消息，根据10月16日，国家卫计委办公厅传来消息，根据10月16日，国近日北京市西城去，内蒙古赤峰</div>
+								</div>
+							</div>
+					    </div>
 					</div>
 				</div>
-			</div>
+				<div class="col-md-4">
+					<div class="panel panel-default">
+					    <div class="panel-heading">
+					        <span>综合消息</span>
+					    </div>
+					    <div class="panel-body">
+					        <div class="panel-group" id="accordion">
+							    <div class="panel panel-default">
+							        <div class="panel-heading">
+							            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+							         		<i class="fa fa-caret-right"></i> 国务院：贫困地区儿童将增大病医保 阿斯顿发生的股份化工热帖维护云煽风点火案违法人给他是我热还以为而已
+							        	</div>
+							        </div>
+							        <div id="collapse1" class="panel-collapse collapse in">
+							            <div class="panel-body">
+							            	<div class="media">
+											  	<div class="media-left">
+												    <a href="javascript:void(0)">
+												      	<img class="media-object" src="images/xinwen.jpg">
+												    </a>
+											  	</div>
+												<div class="media-body">
+													国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
+												</div>
+											</div>
+							            </div>
+							        </div>
+							    </div>
+							    <div class="panel panel-default">
+							        <div class="panel-heading">
+							            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+										<i class="fa fa-caret-right"></i> 
+										重庆医改后导致医疗费任性上涨
+										</div>
+							        </div>
+							        <div id="collapse2" class="panel-collapse collapse">
+							            <div class="panel-body">
+							                <div class="media">
+											  	<div class="media-left">
+												    <a href="javascript:void(0)">
+												      	<img class="media-object" src="images/xinwen.jpg">
+												    </a>
+											  	</div>
+												<div class="media-body">
+													国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
+												</div>
+											</div>
+							            </div>
+							        </div>
+							    </div>
+							    <div class="panel panel-default">
+							        <div class="panel-heading">
+							            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+										<i class="fa fa-caret-right"></i> 
+										广东11月起生二孩无需审批，登记
+										</div>
+							        </div>
+							        <div id="collapse3" class="panel-collapse collapse">
+							            <div class="panel-body">
+							                <div class="media">
+											  	<div class="media-left">
+												    <a href="javascript:void(0)">
+												      	<img class="media-object" src="images/xinwen.jpg">
+												    </a>
+											  	</div>
+												<div class="media-body">
+													国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
+												</div>
+											</div>
+							            </div>
+							        </div>
+							    </div>
+							    <div class="panel panel-default">
+							        <div class="panel-heading">
+							            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+										<i class="fa fa-caret-right"></i> 
+										卫计委细化基层医改 
+										</div>
+							        </div>
+							        <div id="collapse4" class="panel-collapse collapse">
+							            <div class="panel-body">
+							                <div class="media">
+											  	<div class="media-left">
+												    <a href="javascript:void(0)">
+												      	<img class="media-object" src="images/xinwen.jpg">
+												    </a>
+											  	</div>
+												<div class="media-body">
+													国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
+												</div>
+											</div>
+							            </div>
+							        </div>
+							    </div>
+							    <div class="panel panel-default">
+							        <div class="panel-heading">
+							            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+										<i class="fa fa-caret-right"></i> 
+										国务院：贫困地区儿童将增大病医保
+										</div>
+							        </div>
+							        <div id="collapse5" class="panel-collapse collapse">
+							            <div class="panel-body">
+							                <div class="media">
+											  	<div class="media-left">
+												    <a href="javascript:void(0)">
+												      	<img class="media-object" src="images/xinwen.jpg">
+												    </a>
+											  	</div>
+												<div class="media-body">
+													国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
+												</div>
+											</div>
+							            </div>
+							        </div>
+							    </div>
+							    <div class="panel panel-default">
+							        <div class="panel-heading">
+							            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+										<i class="fa fa-caret-right"></i> 
+										卫计委细化基层医改 建多渠道财政补
+										</div>
+							        </div>
+							        <div id="collapse6" class="panel-collapse collapse">
+							            <div class="panel-body">
+							                <div class="media">
+											  	<div class="media-left">
+												    <a href="javascript:void(0)">
+												      	<img class="media-object" src="images/xinwen.jpg">
+												    </a>
+											  	</div>
+												<div class="media-body">
+													国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
+												</div>
+											</div>
+							            </div>
+							        </div>
+							    </div>
+							</div>
+					    </div>
+					</div>
+					<div class="panel panel-default">
+					    <div class="panel-heading">
+					        <span>综合消息</span>
+					    </div>
+					    <div class="panel-body">
+					        <div class="panel-group" id="accordion">
+							    <div class="panel panel-default">
+							        <div class="panel-heading">
+							            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+							         		<i class="fa fa-caret-right"></i> 国务院：贫困地区儿童将增大病医保 阿斯顿发生的股份化工热帖维护云煽风点火案违法人给他是我热还以为而已
+							        	</div>
+							        </div>
+							        <div id="collapse1" class="panel-collapse collapse in">
+							            <div class="panel-body">
+							            	<div class="media">
+											  	<div class="media-left">
+												    <a href="javascript:void(0)">
+												      	<img class="media-object" src="images/xinwen.jpg">
+												    </a>
+											  	</div>
+												<div class="media-body">
+													国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
+												</div>
+											</div>
+							            </div>
+							        </div>
+							    </div>
+							    <div class="panel panel-default">
+							        <div class="panel-heading">
+							            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+										<i class="fa fa-caret-right"></i> 
+										重庆医改后导致医疗费任性上涨
+										</div>
+							        </div>
+							        <div id="collapse2" class="panel-collapse collapse">
+							            <div class="panel-body">
+							                <div class="media">
+											  	<div class="media-left">
+												    <a href="javascript:void(0)">
+												      	<img class="media-object" src="images/xinwen.jpg">
+												    </a>
+											  	</div>
+												<div class="media-body">
+													国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
+												</div>
+											</div>
+							            </div>
+							        </div>
+							    </div>
+							    <div class="panel panel-default">
+							        <div class="panel-heading">
+							            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+										<i class="fa fa-caret-right"></i> 
+										广东11月起生二孩无需审批，登记
+										</div>
+							        </div>
+							        <div id="collapse3" class="panel-collapse collapse">
+							            <div class="panel-body">
+							                <div class="media">
+											  	<div class="media-left">
+												    <a href="javascript:void(0)">
+												      	<img class="media-object" src="images/xinwen.jpg">
+												    </a>
+											  	</div>
+												<div class="media-body">
+													国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
+												</div>
+											</div>
+							            </div>
+							        </div>
+							    </div>
+							    <div class="panel panel-default">
+							        <div class="panel-heading">
+							            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+										<i class="fa fa-caret-right"></i> 
+										卫计委细化基层医改 
+										</div>
+							        </div>
+							        <div id="collapse4" class="panel-collapse collapse">
+							            <div class="panel-body">
+							                <div class="media">
+											  	<div class="media-left">
+												    <a href="javascript:void(0)">
+												      	<img class="media-object" src="images/xinwen.jpg">
+												    </a>
+											  	</div>
+												<div class="media-body">
+													国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
+												</div>
+											</div>
+							            </div>
+							        </div>
+							    </div>
+							    <div class="panel panel-default">
+							        <div class="panel-heading">
+							            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+										<i class="fa fa-caret-right"></i> 
+										国务院：贫困地区儿童将增大病医保
+										</div>
+							        </div>
+							        <div id="collapse5" class="panel-collapse collapse">
+							            <div class="panel-body">
+							                <div class="media">
+											  	<div class="media-left">
+												    <a href="javascript:void(0)">
+												      	<img class="media-object" src="images/xinwen.jpg">
+												    </a>
+											  	</div>
+												<div class="media-body">
+													国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
+												</div>
+											</div>
+							            </div>
+							        </div>
+							    </div>
+							    <div class="panel panel-default">
+							        <div class="panel-heading">
+							            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+										<i class="fa fa-caret-right"></i> 
+										卫计委细化基层医改 建多渠道财政补
+										</div>
+							        </div>
+							        <div id="collapse6" class="panel-collapse collapse">
+							            <div class="panel-body">
+							                <div class="media">
+											  	<div class="media-left">
+												    <a href="javascript:void(0)">
+												      	<img class="media-object" src="images/xinwen.jpg">
+												    </a>
+											  	</div>
+												<div class="media-body">
+													国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
+												</div>
+											</div>
+							            </div>
+							        </div>
+							    </div>
+							</div>
+					    </div>
+					</div>
+					<div class="panel panel-default">
+					    <div class="panel-heading">
+					        <span>综合消息</span>
+					    </div>
+					    <div class="panel-body">
+					        <div class="panel-group" id="accordion">
+							    <div class="panel panel-default">
+							        <div class="panel-heading">
+							            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+							         		<i class="fa fa-caret-right"></i> 国务院：贫困地区儿童将增大病医保 阿斯顿发生的股份化工热帖维护云煽风点火案违法人给他是我热还以为而已
+							        	</div>
+							        </div>
+							        <div id="collapse1" class="panel-collapse collapse in">
+							            <div class="panel-body">
+							            	<div class="media">
+											  	<div class="media-left">
+												    <a href="javascript:void(0)">
+												      	<img class="media-object" src="images/xinwen.jpg">
+												    </a>
+											  	</div>
+												<div class="media-body">
+													国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
+												</div>
+											</div>
+							            </div>
+							        </div>
+							    </div>
+							    <div class="panel panel-default">
+							        <div class="panel-heading">
+							            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+										<i class="fa fa-caret-right"></i> 
+										重庆医改后导致医疗费任性上涨
+										</div>
+							        </div>
+							        <div id="collapse2" class="panel-collapse collapse">
+							            <div class="panel-body">
+							                <div class="media">
+											  	<div class="media-left">
+												    <a href="javascript:void(0)">
+												      	<img class="media-object" src="images/xinwen.jpg">
+												    </a>
+											  	</div>
+												<div class="media-body">
+													国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
+												</div>
+											</div>
+							            </div>
+							        </div>
+							    </div>
+							    <div class="panel panel-default">
+							        <div class="panel-heading">
+							            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+										<i class="fa fa-caret-right"></i> 
+										广东11月起生二孩无需审批，登记
+										</div>
+							        </div>
+							        <div id="collapse3" class="panel-collapse collapse">
+							            <div class="panel-body">
+							                <div class="media">
+											  	<div class="media-left">
+												    <a href="javascript:void(0)">
+												      	<img class="media-object" src="images/xinwen.jpg">
+												    </a>
+											  	</div>
+												<div class="media-body">
+													国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
+												</div>
+											</div>
+							            </div>
+							        </div>
+							    </div>
+							    <div class="panel panel-default">
+							        <div class="panel-heading">
+							            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+										<i class="fa fa-caret-right"></i> 
+										卫计委细化基层医改 
+										</div>
+							        </div>
+							        <div id="collapse4" class="panel-collapse collapse">
+							            <div class="panel-body">
+							                <div class="media">
+											  	<div class="media-left">
+												    <a href="javascript:void(0)">
+												      	<img class="media-object" src="images/xinwen.jpg">
+												    </a>
+											  	</div>
+												<div class="media-body">
+													国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
+												</div>
+											</div>
+							            </div>
+							        </div>
+							    </div>
+							    <div class="panel panel-default">
+							        <div class="panel-heading">
+							            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+										<i class="fa fa-caret-right"></i> 
+										国务院：贫困地区儿童将增大病医保
+										</div>
+							        </div>
+							        <div id="collapse5" class="panel-collapse collapse">
+							            <div class="panel-body">
+							                <div class="media">
+											  	<div class="media-left">
+												    <a href="javascript:void(0)">
+												      	<img class="media-object" src="images/xinwen.jpg">
+												    </a>
+											  	</div>
+												<div class="media-body">
+													国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
+												</div>
+											</div>
+							            </div>
+							        </div>
+							    </div>
+							    <div class="panel panel-default">
+							        <div class="panel-heading">
+							            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+										<i class="fa fa-caret-right"></i> 
+										卫计委细化基层医改 建多渠道财政补
+										</div>
+							        </div>
+							        <div id="collapse6" class="panel-collapse collapse">
+							            <div class="panel-body">
+							                <div class="media">
+											  	<div class="media-left">
+												    <a href="javascript:void(0)">
+												      	<img class="media-object" src="images/xinwen.jpg">
+												    </a>
+											  	</div>
+												<div class="media-body">
+													国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
+												</div>
+											</div>
+							            </div>
+							        </div>
+							    </div>
+							</div>
+					    </div>
+					</div>
+				</div>
+			</div>	
 		</div>
 	</div>
-
-
-
-	<div class="customers">
-		<div class="container containers">
-			<div class="panels">
-				<div class="panel-header">
-					<img src="images/xinwenkuaibao.jpg">
-				</div>
-				<div class="panel-bodys">
-					<div class="panel-group" id="kuaibao">
-					    <div class="panel panel-default">
-					        <div class="panel-heading">
-					            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#kuaibao" href="#kuaibao1">
-					         		<i class="fa fa-caret-right"></i> 国务院：贫困地区儿童将增大病医保 阿斯顿发生的股份化工热帖维护云煽风点火案违法人给他是我热还以为而已
-					        	</div>
-					        </div>
-					        <div id="kuaibao1" class="panel-collapse collapse in">
-					            <div class="panel-body">
-					            	<div class="media">
-									  	<div class="media-left">
-										    <a href="javascript:void(0)">
-										      	<img class="media-object" src="images/xinwen.jpg">
-										    </a>
-									  	</div>
-										<div class="media-body">
-											国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
-										</div>
-									</div>
-					            </div>
-					        </div>
-					    </div>
-					    <div class="panel panel-default">
-					        <div class="panel-heading">
-					            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#kuaibao" href="#kuaibao2">
-								<i class="fa fa-caret-right"></i> 
-								重庆医改后导致医疗费任性上涨
-								</div>
-					        </div>
-					        <div id="kuaibao2" class="panel-collapse collapse">
-					            <div class="panel-body">
-					                <div class="media">
-									  	<div class="media-left">
-										    <a href="javascript:void(0)">
-										      	<img class="media-object" src="images/xinwen.jpg">
-										    </a>
-									  	</div>
-										<div class="media-body">
-											国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
-										</div>
-									</div>
-					            </div>
-					        </div>
-					    </div>
-					    <div class="panel panel-default">
-					        <div class="panel-heading">
-					            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#kuaibao" href="#kuaibao3">
-								<i class="fa fa-caret-right"></i> 
-								广东11月起生二孩无需审批，登记
-								</div>
-					        </div>
-					        <div id="kuaibao3" class="panel-collapse collapse">
-					            <div class="panel-body">
-					                <div class="media">
-									  	<div class="media-left">
-										    <a href="javascript:void(0)">
-										      	<img class="media-object" src="images/xinwen.jpg">
-										    </a>
-									  	</div>
-										<div class="media-body">
-											国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
-										</div>
-									</div>
-					            </div>
-					        </div>
-					    </div>
-					    <div class="panel panel-default">
-					        <div class="panel-heading">
-					            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#kuaibao" href="#kuaibao4">
-								<i class="fa fa-caret-right"></i> 
-								卫计委细化基层医改 
-								</div>
-					        </div>
-					        <div id="kuaibao4" class="panel-collapse collapse">
-					            <div class="panel-body">
-					                <div class="media">
-									  	<div class="media-left">
-										    <a href="javascript:void(0)">
-										      	<img class="media-object" src="images/xinwen.jpg">
-										    </a>
-									  	</div>
-										<div class="media-body">
-											国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
-										</div>
-									</div>
-					            </div>
-					        </div>
-					    </div>
-					    <div class="panel panel-default">
-					        <div class="panel-heading">
-					            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#kuaibao" href="#kuaibao5">
-								<i class="fa fa-caret-right"></i> 
-								国务院：贫困地区儿童将增大病医保
-								</div>
-					        </div>
-					        <div id="kuaibao5" class="panel-collapse collapse">
-					            <div class="panel-body">
-					                <div class="media">
-									  	<div class="media-left">
-										    <a href="javascript:void(0)">
-										      	<img class="media-object" src="images/xinwen.jpg">
-										    </a>
-									  	</div>
-										<div class="media-body">
-											国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
-										</div>
-									</div>
-					            </div>
-					        </div>
-					    </div>
-					    <div class="panel panel-default">
-					        <div class="panel-heading">
-					            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#kuaibao" href="#kuaibao6">
-								<i class="fa fa-caret-right"></i> 
-								卫计委细化基层医改 建多渠道财政补
-								</div>
-					        </div>
-					        <div id="kuaibao6" class="panel-collapse collapse">
-					            <div class="panel-body">
-					                <div class="media">
-									  	<div class="media-left">
-										    <a href="javascript:void(0)">
-										      	<img class="media-object" src="images/xinwen.jpg">
-										    </a>
-									  	</div>
-										<div class="media-body">
-											国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
-										</div>
-									</div>
-					            </div>
-					        </div>
-					    </div>
-					</div>
-				</div>
-			</div>
-			<div class="panels">
-				<div class="panel-header"><img src="images/keyanchengguo.jpg"></div>
-				<div class="panel-bodys">
-					<div class="panel-group" id="chengguo">
-					    <div class="panel panel-default">
-					        <div class="panel-heading">
-					            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#chengguo" href="#chengguo1">
-					         		<i class="fa fa-caret-right"></i> 国务院：贫困地区儿童将增大病医保 
-					        	</div>
-					        </div>
-					        <div id="chengguo1" class="panel-collapse collapse in">
-					            <div class="panel-body">
-					            	<div class="media">
-									  	<div class="media-left">
-										    <a href="javascript:void(0)">
-										      	<img class="media-object" src="images/xinwen.jpg">
-										    </a>
-									  	</div>
-										<div class="media-body">
-											国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
-										</div>
-									</div>
-					            </div>
-					        </div>
-					    </div>
-					    <div class="panel panel-default">
-					        <div class="panel-heading">
-					            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#chengguo" href="#chengguo2">
-									<i class="fa fa-caret-right"></i> 
-									重庆医改后导致医疗费任性上涨
-								</div>
-					        </div>
-					        <div id="chengguo2" class="panel-collapse collapse">
-					            <div class="panel-body">
-					                <div class="media">
-									  	<div class="media-left">
-										    <a href="javascript:void(0)">
-										      	<img class="media-object" src="images/xinwen.jpg">
-										    </a>
-									  	</div>
-										<div class="media-body">
-											国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
-										</div>
-									</div>
-					            </div>
-					        </div>
-					    </div>
-					    <div class="panel panel-default">
-					        <div class="panel-heading">
-					            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#chengguo" href="#chengguo3">
-									<i class="fa fa-caret-right"></i> 
-									广东11月起生二孩无需审批，登记
-								</div>
-					        </div>
-					        <div id="chengguo3" class="panel-collapse collapse">
-					            <div class="panel-body">
-					                <div class="media">
-									  	<div class="media-left">
-										    <a href="javascript:void(0)">
-										      	<img class="media-object" src="images/xinwen.jpg">
-										    </a>
-									  	</div>
-										<div class="media-body">
-											国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
-										</div>
-									</div>
-					            </div>
-					        </div>
-					    </div>
-					    <div class="panel panel-default">
-					        <div class="panel-heading">
-					            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#chengguo" href="#chengguo4">
-									<i class="fa fa-caret-right"></i> 
-									卫计委细化基层医改 
-								</div>
-					        </div>
-					        <div id="chengguo4" class="panel-collapse collapse">
-					            <div class="panel-body">
-					                <div class="media">
-									  	<div class="media-left">
-										    <a href="javascript:void(0)">
-										      	<img class="media-object" src="images/xinwen.jpg">
-										    </a>
-									  	</div>
-										<div class="media-body">
-											国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
-										</div>
-									</div>
-					            </div>
-					        </div>
-					    </div>
-					    <div class="panel panel-default">
-					        <div class="panel-heading">
-					            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#chengguo" href="#chengguo5">
-									<i class="fa fa-caret-right"></i> 
-									国务院：贫困地区儿童将增大病医保
-								</div>
-					        </div>
-					        <div id="chengguo5" class="panel-collapse collapse">
-					            <div class="panel-body">
-					                <div class="media">
-									  	<div class="media-left">
-										    <a href="javascript:void(0)">
-										      	<img class="media-object" src="images/xinwen.jpg">
-										    </a>
-									  	</div>
-										<div class="media-body">
-											国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
-										</div>
-									</div>
-					            </div>
-					        </div>
-					    </div>
-					    <div class="panel panel-default">
-					        <div class="panel-heading">
-					            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#chengguo" href="#chengguo6">
-								<i class="fa fa-caret-right"></i> 
-								卫计委细化基层医改 建多渠道财政补
-								</div>
-					        </div>
-					        <div id="chengguo6" class="panel-collapse collapse">
-					            <div class="panel-body">
-					                <div class="media">
-									  	<div class="media-left">
-										    <a href="javascript:void(0)">
-										      	<img class="media-object" src="images/xinwen.jpg">
-										    </a>
-									  	</div>
-										<div class="media-body">
-											国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
-										</div>
-									</div>
-					            </div>
-					        </div>
-					    </div>
-					</div>
-				</div>
-			</div>
-			<div class="panels">
-				<div class="panel-header"><img src="images/keyanchengjiu.jpg"></div>
-				<div class="panel-bodys">
-					<div class="panel-group" id="chengjiu">
-					    <div class="panel panel-default">
-					        <div class="panel-heading">
-					            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#chengjiu" href="#chengjiu1">
-					         		<i class="fa fa-caret-right"></i> 国务院：贫困地区儿童将增大病医保 
-					        	</div>
-					        </div>
-					        <div id="chengjiu1" class="panel-collapse collapse in">
-					            <div class="panel-body">
-					            	<div class="media">
-									  	<div class="media-left">
-										    <a href="javascript:void(0)">
-										      	<img class="media-object" src="images/xinwen.jpg">
-										    </a>
-									  	</div>
-										<div class="media-body">
-											国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
-										</div>
-									</div>
-					            </div>
-					        </div>
-					    </div>
-					    <div class="panel panel-default">
-					        <div class="panel-heading">
-					            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#chengjiu" href="#chengjiu2">
-									<i class="fa fa-caret-right"></i> 
-									重庆医改后导致医疗费任性上涨
-								</div>
-					        </div>
-					        <div id="chengjiu2" class="panel-collapse collapse">
-					            <div class="panel-body">
-					                <div class="media">
-									  	<div class="media-left">
-										    <a href="javascript:void(0)">
-										      	<img class="media-object" src="images/xinwen.jpg">
-										    </a>
-									  	</div>
-										<div class="media-body">
-											国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
-										</div>
-									</div>
-					            </div>
-					        </div>
-					    </div>
-					    <div class="panel panel-default">
-					        <div class="panel-heading">
-					            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#chengjiu" href="#chengjiu3">
-									<i class="fa fa-caret-right"></i> 
-									广东11月起生二孩无需审批，登记
-								</div>
-					        </div>
-					        <div id="chengjiu3" class="panel-collapse collapse">
-					            <div class="panel-body">
-					                <div class="media">
-									  	<div class="media-left">
-										    <a href="javascript:void(0)">
-										      	<img class="media-object" src="images/xinwen.jpg">
-										    </a>
-									  	</div>
-										<div class="media-body">
-											国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
-										</div>
-									</div>
-					            </div>
-					        </div>
-					    </div>
-					    <div class="panel panel-default">
-					        <div class="panel-heading">
-					            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#chengjiu" href="#chengjiu4">
-									<i class="fa fa-caret-right"></i> 
-									卫计委细化基层医改 
-								</div>
-					        </div>
-					        <div id="chengjiu4" class="panel-collapse collapse">
-					            <div class="panel-body">
-					                <div class="media">
-									  	<div class="media-left">
-										    <a href="javascript:void(0)">
-										      	<img class="media-object" src="images/xinwen.jpg">
-										    </a>
-									  	</div>
-										<div class="media-body">
-											国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
-										</div>
-									</div>
-					            </div>
-					        </div>
-					    </div>
-					    <div class="panel panel-default">
-					        <div class="panel-heading">
-					            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#chengjiu" href="#chengjiu5">
-									<i class="fa fa-caret-right"></i> 
-									国务院：贫困地区儿童将增大病医保
-								</div>
-					        </div>
-					        <div id="chengjiu5" class="panel-collapse collapse">
-					            <div class="panel-body">
-					                <div class="media">
-									  	<div class="media-left">
-										    <a href="javascript:void(0)">
-										      	<img class="media-object" src="images/xinwen.jpg">
-										    </a>
-									  	</div>
-										<div class="media-body">
-											国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
-										</div>
-									</div>
-					            </div>
-					        </div>
-					    </div>
-					    <div class="panel panel-default">
-					        <div class="panel-heading">
-					            <div class="panel-title" data-toggle="collapse" data-toggle="collapse" data-parent="#chengjiu" href="#chengjiu6">
-								<i class="fa fa-caret-right"></i> 
-								卫计委细化基层医改 建多渠道财政补
-								</div>
-					        </div>
-					        <div id="chengjiu6" class="panel-collapse collapse">
-					            <div class="panel-body">
-					                <div class="media">
-									  	<div class="media-left">
-										    <a href="javascript:void(0)">
-										      	<img class="media-object" src="images/xinwen.jpg">
-										    </a>
-									  	</div>
-										<div class="media-body">
-											国务院总理李克强11月19日主持召开国务院常务会议，决定进一步采取有力措施缓解企业融资成本高问题，部署促进贫...
-										</div>
-									</div>
-					            </div>
-					        </div>
-					    </div>
-					</div>
-				</div>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-	</div>
+	
 	<div class="footer">
 		<div class="container containers">
 			<div class="text-center luntan" style="">
