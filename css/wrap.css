@@ -232,6 +232,9 @@ button {
 .second .bs-header .col-md-s:last-child {
     border-right: 0;
 }
+.three .bs-header .col-md-s {
+    border:0;
+}
 .nav-header {
     padding: 15px 0;
     background-color: #143e8f;
@@ -242,6 +245,64 @@ button {
 }
 .second .nav-header {
     padding: 0;
+}
+.panel-heading {
+    padding: 0 15px 10px 15px;
+}
+.panels .panel-header {
+    margin-bottom: 15px;
+    border-bottom: 3px solid #ccc;
+}
+.nav-banner .panel {
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1; /* Fix for IE7 */
+    *display: inline; /* Fix for IE7 */
+    float: left;
+    margin-right: 10px;
+}
+.nav-banner .panel-group {
+    margin-bottom: 13px;
+}
+.nav-banner .panel-group .panel-heading + .panel-collapse > .panel-body {
+    border:0;
+}
+.nav-banner .panel-group .panel + .panel {
+    margin-top: 0;
+}
+.nav-banner .panel-bodys {
+    width:350px;
+    display: block;
+}
+.nav-banner .panels .panel-bodys .panel-heading .panel-title {
+    width:310px;
+}
+.nav-banner .panel-default > .panel-heading {
+    background-color: transparent;
+}
+.nav-banner .panel-default > .panel-heading a {
+    text-decoration: none;
+    color: #666;
+}
+.nav-banner .panel-default > .panel-heading .title {
+    border-bottom: 3px solid red;
+    padding-bottom: 6px;
+    margin-bottom: -12px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.customer .panels .panel-header a,
+.customers .panels .panel-header a {
+    text-decoration: none;
+    color: #666;
+}
+.customer .panels .panel-header .title ,
+.customers .panels .panel-header .title {
+    border-bottom: 3px solid red;
+    padding-bottom: 6px;
+    margin-bottom: -3px;
+    font-size: 16px;
+    font-weight: 600;
 }
 /*************************************************************************************************/
 .second .banner {
@@ -279,7 +340,7 @@ button {
 .customer {
     margin: 20px 0px;
 }
-.customer .panels {
+ .panels {
     display: inline-block;
     vertical-align: top;
     zoom: 1; /* Fix for IE7 */
@@ -287,32 +348,32 @@ button {
     float: left;
     margin-right: 10px;
 }
-.customer .panels .panel-header {
+ .panels .panel-header {
     margin-bottom: 10px;
 }
-.customer .panels .panel-bodys {
+ .panels .panel-bodys {
     display: block;
     width: 439px;
 }
-.customer .panels .panel-bodys .panel-group .panel:first-child {
+ .panels .panel-bodys .panel-group .panel:first-child {
     border-top: 1px solid #ccc;
 } 
-.customer .panels .panel-bodys .panel-group .panel {
+ .panels .panel-bodys .panel-group .panel {
     border-radius: 0;
     border-top: 0;
 }
-.customer .panels .panel-bodys .panel-group .panel + .panel {
+ .panels .panel-bodys .panel-group .panel + .panel {
     margin-top: 0;
 }
-.customer .panels .panel-bodys .panel-heading {
+ .panels .panel-bodys .panel-heading {
     padding: 5px 15px;
     border-bottom: 0;
     cursor: pointer;
 }
-.customer .panels .panel-bodys .panel-heading .panel-title i {
+ .panels .panel-bodys .panel-heading .panel-title i {
     margin-right: 20px;
 }
-.customer .panels .panel-bodys .panel-heading .panel-title {
+ .panels .panel-bodys .panel-heading .panel-title {
     word-wrap: break-word;
     font-size: 14px;
     width: 400px;
@@ -321,11 +382,11 @@ button {
     overflow:hidden; 
     text-overflow:ellipsis;
 }
-.customer .panels .panel-bodys .panel-default > .panel-heading {
+ .panels .panel-bodys .panel-default > .panel-heading {
     border-bottom-color: transparent;
     background-color: transparent;
 }
-.customer .panels .panel-bodys .panel-group .panel-heading + .panel-collapse > .panel-body {
+ .panels .panel-bodys .panel-group .panel-heading + .panel-collapse > .panel-body {
     border-top: 0;
 }
 
